@@ -1,18 +1,18 @@
 databases:
-  - name: mysite
-    databaseName: mysite
-    user: mysite
+  - name: postgreszoum
+    databaseName: postgreszoum
+    user: postgreszoum_user
 
 services:
   - type: web
-    name: mysite
+    name: Budget
     runtime: ruby
     buildCommand: "./bin/render-build.sh"
     startCommand: "bundle exec puma -C config/puma.rb"
     envVars:
       - key: DATABASE_URL
         fromDatabase:
-          name: mysite
+          name: postgreszoum
           property: connectionString
       - key: RAILS_MASTER_KEY
         sync: false
