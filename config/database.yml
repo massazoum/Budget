@@ -86,7 +86,4 @@ test:
 #
 production:
   <<: *default
-  database: BudgetApp_production
-  username: BudgetApp
-  password: massa2000
-  host: localhost
+  url: <%= ENV['DATABASE_URL'] %>
