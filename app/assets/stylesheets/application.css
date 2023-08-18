@@ -1,0 +1,188 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_selfr
+ */
+.icon {
+  width: 100px;
+  height: 100px;
+  border: black 2px solid;
+}
+
+.itemCard {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.itemCardDiv {
+  padding: 5px;
+  margin-bottom: 7px;
+}
+
+@media (max-width: 768px) {
+  body {
+    background-image: url(bgImage.png);
+  }
+
+  .headRegister {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: azure;
+    background-image: url(blueImage.png);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 7vw;
+    padding-right: 7vw;
+    width: 86vw;
+  }
+
+  .submit-button-container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .submit-button {
+    background-image: url(blueImage.png);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    margin: 5px;
+  }
+
+  .submit-button:hover {
+    background-color: #1d75d3;
+  }
+
+  .fa-chevron-left {
+    color: aliceblue;
+  }
+
+  .fa-bars {
+    color: aliceblue;
+  }
+
+  .formfield {
+    display: flex;
+    border: none;
+    width: 100vw;
+    background-image: url(bgfiedImage.png);
+  }
+
+  .field input[type="text"], /* Adjust this selector for different input types */
+  .field input[type="password"],
+  .field input[type="email"],
+  .field textarea {
+    border: none;
+    display: flex;
+    width: 100vw;
+    height: 40px;
+    background-image: url(bgfieldImage.png);
+    margin-top: 5px;
+    margin-bottom: 7px;
+  }
+
+  .itemCardDiv {
+    padding: 5px;
+    margin-bottom: 10px;
+    background-image: url(bgfieldImage.png);
+    width: 90vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+
+  .itemCard {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .item_name {
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .icon_Name {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .item_expenses_sum {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .headTrans {
+    margin-top: 0;
+    margin-bottom: 10px;
+    background-image: url('bgfieldImage.png');
+    width: 90vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+
+  .splashtext {
+    color: gray;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .btn1 {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-image: url('blueImage.png');
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+  }
+
+  .body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  .btn {
+    font-size: 14px;
+    padding: 8px 15px;
+  }
+}
