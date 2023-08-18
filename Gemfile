@@ -37,7 +37,6 @@ gem 'font-awesome-sass', '~> 5.0'
 gem 'rspec-rails', '~> 5.0'
 gem 'rubocop', '>= 1.0', '< 2.0'
 
-
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"
 
