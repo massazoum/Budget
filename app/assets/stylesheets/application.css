@@ -154,7 +154,7 @@
     width: 90vw;
     padding-left: 5vw;
     padding-right: 5vw;
-    height: 30px;
+    height: auto;
     font-family: 'Roboto', sans-serif;
     font-size: 24px;
   }
