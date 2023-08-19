@@ -1,0 +1,17 @@
+<%= form_for [@item, @expense] do |f| %>
+  <%= f.hidden_field :item_id, value: @item.id %>
+  <div class="field">
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :amount %>
+    <%= f.number_field :amount %>
+  </div>
+ <div class="submit-button-container">
+    <%= f.submit 'Save Expense' , class: "submit-button" %>
+
+    <%= link_to 'Back', items_path  , class: "submit-button"%>
+  </div>
+<% end %>

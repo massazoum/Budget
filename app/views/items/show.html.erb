@@ -1,0 +1,28 @@
+<div class="headRegister"> 
+<div>
+<%= link_to items_path, class: "btn btn-primary" do %>
+  <i class="fas fa-chevron-left"></i>
+<% end %>
+</div>
+<div>Transaction</div>
+<div>Next</div>
+</div>
+<div class="headTrans">
+Expenses for <%= @item.name %> <br>
+Total Amount: $<%= @total_amount %>
+</div>
+
+<div>
+  <% @expenses.each do |expense| %>
+   <div class="itemCardDiv"> 
+    <div class="itemCard">
+ <%= expense.name %> - Amount: $<%= expense.amount %>
+    </div>
+     </div> 
+  <% end %>
+</div>
+ <div class="submit-button-container">
+<%= link_to 'Add a New Expense', new_item_expense_path(@item) , class: "submit-button" %>
+<%= link_to 'Back to Items', items_path , class: "submit-button" %>
+</div>
+

@@ -1,0 +1,41 @@
+<div class="headRegister"> 
+<div>
+<%= link_to splash_path, class: "btn btn-primary" do %>
+  <i class="fas fa-chevron-left"></i>
+<% end %>
+</div>
+<div>Register</div>
+<div>Next</div>
+</div>
+
+
+
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+  <%= render "devise/shared/error_messages", resource: resource %>
+
+  <div class="field ">
+  <%= f.text_field :name, autofocus: true, autocomplete: "name" , placeholder: "Enter your name"%>
+</div>
+
+  <div class="field">
+    <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: "Enter your email" ,class:"formfield" %>
+  </div>
+
+  <div class="field">
+    <% if @minimum_password_length %>
+    <em>(<%= @minimum_password_length %> characters minimum)</em>
+    <% end %><br />
+    <%= f.password_field :password, autocomplete: "new-password", placeholder: "Enter your password" %>
+  </div>
+
+  <div class="field">
+    <%= f.password_field :password_confirmation, autocomplete: "new-password", placeholder: "Enter password_confirmation" %>
+  </div>
+
+ <div class="submit-button-container">
+ <%= link_to 'Back to Items', splash_path  , class: "submit-button" %>
+  <%= f.submit "sign up", class: "submit-button" %>
+</div>
+
+<% end %>
+

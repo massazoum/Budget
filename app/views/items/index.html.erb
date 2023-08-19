@@ -1,0 +1,36 @@
+<div class="headRegister"> 
+<div>
+<%= link_to items_path, class: "btn btn-primary" do %>
+  <i class="fas fa-bars"></i>
+<% end %>
+</div>
+<div>My Items</div>
+<div>Next</div>
+</div>
+
+<div>
+  <% @items.each do |item| %>
+    <div class="itemCardDiv"> 
+    <div class="itemCard">
+   <div class="icon_Name"> 
+    <div> 
+    <% if item.icon.attached? %>
+        <%= image_tag item.icon ,class:"icon"%>
+      <% else %>
+        No Icon Available
+      <% end %>
+    </div>
+    <div class="item_name">   
+     <%= link_to item.name, item_path(item) %>
+    </div> 
+   </div>
+    <div class="item_expenses_sum"> 
+    <strong> $<%= Expense.where(item_id: item.id).sum(:amount) %> </strong> 
+     </div> 
+    </div>
+    </div>
+  <% end %>
+</div>
+ <div class="submit-button-container">
+<%= link_to 'Add a New Item', new_item_path  , class: "submit-button" %>
+</div>
