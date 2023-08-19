@@ -13,6 +13,7 @@
  *= require_tree .
  *= require_selfr
  */
+
 .icon {
   width: 100px;
   height: 100px;
@@ -32,7 +33,8 @@
 
 @media (max-width: 768px) {
   body {
-    background-image: url(bgImage.png);
+    /* background-image: url(bgImage.png); */
+    background-color: rgb(244, 244, 244);
   }
 
   .headRegister {
@@ -40,7 +42,7 @@
     flex-direction: row;
     justify-content: space-between;
     color: azure;
-    background-image: url(blueImage.png);
+    background-color: #3778c2;
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 7vw;
@@ -56,7 +58,7 @@
   }
 
   .submit-button {
-    background-image: url(blueImage.png);
+    background-color: #5fb523;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
@@ -67,7 +69,7 @@
   }
 
   .submit-button:hover {
-    background-color: #1d75d3;
+    background-color: #5fb523;
   }
 
   .fa-chevron-left {
@@ -105,6 +107,19 @@
     width: 90vw;
     padding-left: 5vw;
     padding-right: 5vw;
+    min-height: 20px;
+  }
+
+  .itemCardDivEx {
+    padding: 5px;
+    margin-bottom: 10px;
+    background-image: url(bgfieldImage.png);
+    width: 90vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    min-height: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
   }
 
   .itemCard {
@@ -157,7 +172,7 @@
     font-size: 16px;
     border: none;
     border-radius: 5px;
-    background-image: url('blueImage.png');
+    background-color: #5fb523;
     color: white;
     text-decoration: none;
     margin-right: 10px;
