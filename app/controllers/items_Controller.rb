@@ -8,10 +8,7 @@ class ItemsController < ApplicationController
 
   def show
     @item = Item.find(params[:id])
-    # puts "@item: #{@item.inspect}"
     @expenses = Expense.where(item_id: params[:id]).order(created_at: :desc)
-    # @expenses = @item.expenses
-    # puts "@item: #{@expenses.inspect}"
     @total_amount = @expenses.sum(:amount)
   end
 
