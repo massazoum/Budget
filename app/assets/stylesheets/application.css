@@ -33,8 +33,9 @@
 
 @media (max-width: 768px) {
   body {
-    /* background-image: url(bgImage.png); */
     background-color: rgb(244, 244, 244);
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 14px;
   }
 
   .headRegister {
@@ -102,7 +103,7 @@
 
   .itemCardDiv {
     padding: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     background-image: url(bgfieldImage.png);
     width: 90vw;
     padding-left: 5vw;
@@ -112,14 +113,14 @@
 
   .itemCardDivEx {
     padding: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     background-image: url(bgfieldImage.png);
     width: 90vw;
     padding-left: 5vw;
     padding-right: 5vw;
     min-height: 20px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 8px;
+    padding-bottom: 8px;
   }
 
   .itemCard {
@@ -157,6 +158,7 @@
 
   .splashtext {
     color: gray;
+    font-family: 'Roboto', sans-serif;
     font-size: 24px;
     margin-bottom: 10px;
   }
