@@ -119,8 +119,8 @@
     padding-left: 5vw;
     padding-right: 5vw;
     min-height: 20px;
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding-top: 12px;
+    padding-bottom: 12px;
   }
 
   .itemCard {
@@ -154,6 +154,9 @@
     width: 90vw;
     padding-left: 5vw;
     padding-right: 5vw;
+    height: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
   }
 
   .splashtext {
