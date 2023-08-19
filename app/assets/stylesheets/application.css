@@ -109,6 +109,18 @@
     min-height: 20px;
   }
 
+  .itemCardDivEx {
+    padding: 5px;
+    margin-bottom: 10px;
+    background-image: url(bgfieldImage.png);
+    width: 90vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    min-height: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
   .itemCard {
     display: flex;
     flex-direction: row;
