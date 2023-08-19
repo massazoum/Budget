@@ -81,9 +81,15 @@ To run the project, execute the following command:
 ```
 rails server
 ```
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+### Deployment
+
+  The changes will be deployed to the website through our standard deployment process.
+- [Budget](https://budget-ixbx.onrender.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 <!-- AUTHORS -->
 
