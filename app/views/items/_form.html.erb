@@ -1,0 +1,17 @@
+<%= form_for @item, html: { multipart: true } do |f| %>
+  <div class="field ">
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+    </div>
+
+  <div class="field ">
+  <%= f.label :icon %>
+  <%= f.file_field :icon %>
+    </div>
+
+ <div class="submit-button-container">
+  <%= link_to 'Back', items_path  , class: "submit-button"%>
+
+  <%= f.submit 'Save' , class: "submit-button" %>
+  </div>
+<% end %>
